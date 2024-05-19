@@ -1,0 +1,238 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* headre section */
+header {
+    height: 185px;
+    width: 100%;
+    background-color: #f17a52;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.pro-img img {
+    padding-top: 5px;
+    height: auto;
+    width: 135px;
+    border-radius: 80px;
+    /* border-style: dashed; */
+}
+
+.pro-img p {
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.swiggy-img img {
+    height: auto;
+    width: 170px;
+}
+
+.title h1 {
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.title p {
+    font-size: 1.50rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+/*  main section */
+main {
+    height: 845px;
+}
+
+/* body */
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    /* width: 50px; */
+    margin-bottom: 10px;
+}
+
+.buttons button {
+    margin: 0 5px; /* Adjust the margin as needed */
+    /* width: 300px; Set the width of each button */
+    height: 50px; /* Set the height of each button */
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px #999;
+}
+
+
+.buttons button#btn1 {
+    background-color: #04AA6D;
+    width: 210px;
+}
+.buttons button#btn2 {
+    background-color: #04aaaa;
+    width: 210px;
+}
+.buttons button#btn3 {
+    background-color: #aa04aa;
+    width: 170px;
+}
+.buttons button#btn4 {
+    background-color: #aa0404;
+    width: 170px;
+}
+.buttons button#btn5 {
+    background-color: #044caa;
+    width: 330px;
+}
+
+.buttons button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.insertedImage {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 750px; /* Adjust the height of the container */
+    width: 100%;
+}
+
+.insertedImage img {
+    height: 700px;
+    width: 90%;
+}
+
+#container {
+    width: 60%; /* Adjust the width as needed */
+    margin: 0 auto; /*Center the container horizontally*/
+    padding: 20px;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    align-items: center; /* Center vertically */
+}
+
+#sqlForm {
+    margin-bottom: 20px; /* Add space below the form */
+    padding-top: 10px;
+    padding-left: 35px;
+}
+
+#sqlQuery {
+    width: 85%; /* Adjust the width of the input field */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+#sqlQuery:focus {
+    outline: none;
+    border-color: #007bff; /* Change border color when input is focused */
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darken the background color on hover */
+}
+
+/* Style the result fetched from the database */
+#queryResult {
+    margin-top: 20px; /* Add space above the result */
+    padding: 10px;
+    background-color: #d4edda; /* Example background color for the result */
+    border: 1px solid #c3e6cb; /* Example border color for the result */
+    border-radius: 5px;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+/* Style the select element */
+.select-menu {
+    width: 30%; /* Adjust the width as needed */
+    margin: 0 auto; /*Center the container horizontally*/
+    padding: 20px;
+    border-radius: 20px;
+    background: #e0e0e0;
+    box-shadow:  5px 5px 10px #bebebe,
+             -5px -5px 10px #ffffff;
+    align-items: center; /* Center vertically */
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Style the options within the select menu */
+.select-menu option {
+    padding: 10px; /* Add padding to each option */
+    font-size: 18px; /* Set font size */
+    background: #e0e0e0;
+    box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+    color: #333; /* Set text color */
+}
+
+/* Style the hover effect for options */
+.select-menu option:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+}
+
+/* Style the focus effect for options */
+.select-menu option:focus {
+    outline: none; /* Remove default focus outline */
+    background-color: #e0e0e0; /* Change background color on focus */
+}
+
+/* footer section */
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: #f17a52;
+    display: grid;
+    place-items: center;
+}
+
+.footer-text p {
+    text-align: center;
+    font-size: 1.5rem;
+}
